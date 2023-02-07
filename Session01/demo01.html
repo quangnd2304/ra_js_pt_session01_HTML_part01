@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Intro</title>
+</head>
+
+<body>
+    <!-- HTML Block-->
+    <p style="background-color: black;">Chào đón các bạn đến với <span id="rikkei">Rikkei Academy</span></p>
+    <p>Đoạn văn 1</p>
+    <p>Đoạn văn 2</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, minima laudantium ipsum iste, dolores, nemo
+        fugiat numquam repudiandae quam deserunt dolorem maiores? Reiciendis libero vero facilis ea deserunt modi
+        beatae?</p>
+    <p>Đoạn văn 3</p>
+    <!-- HTML Inline -->
+    <span>Lớp Javascript</span>
+    <em>tháng 2 - 2023</em>
+    <strong>của rikkei academy</strong>
+    <!-- CSS tô đỏ chữ Rikkei Academy -->
+    <style>
+        #rikkei {
+            color: red;
+        }
+    </style>
+    <!-- Javascrip - hoạt động -->
+    <script>
+        let rikkei = document.getElementById("rikkei");
+        rikkei.onclick = function () {
+            this.innerHTML = "Học viện đào tạo CNTT chất lượng Nhật Bản";
+            this.style.color = "blue";
+        }
+    </script>
+</body>
+
+</html>
